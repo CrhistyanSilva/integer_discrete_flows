@@ -13,7 +13,7 @@
 
 source /etc/profile.d/modules.sh
 cd ~/proyecto_grado/idf/integer_discrete_flows/
-source $CONDA_PYTHON_EXE
+source $CONDA_ACTIVATE
 conda activate idf
 
 python main_experiment.py --batch_size 32 --n_flows 8 --n_levels 3 --n_channels 512 --coupling_type 'densenet' --densenet_depth 12 --n_mixtures 5 --splitprior_type 'densenet'

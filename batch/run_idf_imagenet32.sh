@@ -13,7 +13,7 @@
 echo $USER_EMAIL
 source /etc/profile.d/modules.sh
 cd ~/proyecto_grado/idf/integer_discrete_flows/
-source ~/anaconda/bin/activate
+source $CONDA_PYTHON_EXE
 conda activate idf
 
 python main_experiment.py --evaluate_interval_epochs 5 --n_flows 8 --n_levels 3 --n_channels 512 --n_mixtures 5 --densenet_depth 12 --coupling_type 'densenet' --splitprior_type 'densenet' --dataset 'ima' --epochs 100 --lr_decay 0.99
